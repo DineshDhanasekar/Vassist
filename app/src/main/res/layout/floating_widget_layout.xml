@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--Root container-->
+    <RelativeLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <!--View while view is collapsed-->
+        <RelativeLayout
+            android:id="@+id/collapse_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/expandIcon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_control"/>
+
+        </RelativeLayout>
+
+        <!--View while view is collapsed-->
+        <RelativeLayout
+            android:id="@+id/expand_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/volumeUpIcon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_volume_up" />
+
+            <ImageView
+                android:id="@+id/volumeDownIcon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_volume_down" />
+
+            <ImageView
+                android:id="@+id/screenShotIcon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_screen_shot" />
+
+            <ImageView
+                android:id="@+id/collapseIcon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_close" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_control"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

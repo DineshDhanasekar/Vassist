@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Vassist</string>
+    <string name="start_floating_widget">Start Widget</string>
 </resources>
